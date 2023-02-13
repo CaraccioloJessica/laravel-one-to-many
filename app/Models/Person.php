@@ -19,8 +19,8 @@ class Person extends Model
     return $this->hasOne(PersonDetail::class);
   }
 
-  public function posts()
+  public function post()
   {
-    return $this->hasMany(Posts::class);
+    return $this->hasMany(Post::class);
   }
 }

@@ -21,6 +21,7 @@ return new class extends Migration {
     Schema::table('person_details', function (Blueprint $table) {
       // Versione 2
       $table->foreignId('person_id')->constrained();
+      $table->primary('person_id');
     });
   }
 
