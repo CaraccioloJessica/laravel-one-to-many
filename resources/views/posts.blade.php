@@ -5,7 +5,7 @@
   <ul>
     @foreach ($posts as $post)
       <li class="my-3">
-        <h3>{{$post -> title}}</h3> <br>
+        <h3 class="text-primary">{{$post -> title}}</h3> <br>
         {{$post -> body}} <br>
         <strong>User:</strong> {{$post -> person -> name}}
       </li> 
